@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="robots" content="noindex" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Professional Blender XYZ</title>
+  <!-- Styles -->
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <header role="banner">
+    <nav role="navigation" aria-label="main menu">
+      <a href="#" id="logo">
+        <h1>Blender Brand</h1>
+      </a>
+      <ul role="menubar" aria-hidden="false">
+        <li role="menuitem">
+          <a href="#">Shop</a>
+        </li>
+        <li role="menuitem">
+          <a href="#">Recipes</a>
+        </li>
+        <li role="menuitem" aria-expanded="false" id="supportItem" aria-haspopup="true" aria-controls="supportMenu">
+          <a href="#">Support</a>
+          <ul aria-hidden="true" id="supportMenu">
+            <li role="menuitem">
+              <a href="#">By phone</a>
+            </li>
+            <li role="menuitem">
+              <a href="#">By email</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <form role="search">
+        <input type="search" placeholder="Type your search query" id="searchBar" aria-label="Search">
+        <input type="submit" value="Search" aria-controls="searchBar">
+        <div id="querySuggestions" aria-live="assertive"></div>
+      </form>
+    </nav>
+  </header>
+  <main role="main">
+    <!-- What it is -->
+    <section aria-labelledby="blenderTitle">
+      <h2 id="blenderTitle">Professional Blender XYZ</h2>
+      <div id="productHeader">
+
+        <img src="./images/blender-header.jpg" alt="">
+
+        <div>
+          <p>The Professional Blender with Single Serve is a professional, high-powered innovative tool with a sleek design
+            and outstanding performance. The Blender Total Crushing™ blades break down the toughest ingredients such as ice,
+            whole fruits, and vegetables in seconds! Create resort-style frozen drinks for the entire family with the XL
+            72 oz. pitcher or create healthy, personalized drinks for on the go with the Nutri Blender cups. </p>
+          <a href="#buy" role="button">Shop Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" aria-labelledby="featuresTitle">
+      <h3 id="featuresTitle">Features</h3>
+      <div>
+        <div class="feature">
+          <img src="./images/feature1.jpg" alt="" aria-labelledby="featuresTitle">
+          <h4>High-Speed Blending</h4>
+          <p>Liquefies tough ingredients for restaurant-style purees and more.</p>
+        </div>
+        <!-- /.feature -->
+        <div class="feature">
+          <img src="./images/feature2.jpg" alt="" aria-labelledby="featuresTitle">
+          <h4> Next-Generation Blades</h4>
+          <p>Powerful cyclonic action pulls ingredients downward to maximize blade contact—leaving you with precise, consistent
+            smooth results.</p>
+        </div>
+        <!-- /.feature -->
+        <div class="feature">
+          <img src="./images/feature3.jpg" alt="" aria-labelledby="featuresTitle">
+          <h4> Variable Speed Control</h4>
+          <p>Control Blender's widest range of variable speeds to finely tune and customize textures while you blend.</p>
+        </div>
+        <!-- /.feature -->
+      </div>
+    </section>
+
+    <!-- How to buy -->
+    <section id="buy" aria-labelledby="buyTitle">
+      <h3 id="buyTitle">Buy Now</h3>
+      <div>
+
+        <!-- Form -->
+        <form action="" aria-labelledby="checkoutTitle">
+          <h4 id="checkoutTitle">
+            Checkout
+            <i class="fa fa-shopping-cart"></i>
+          </h4>
+
+          <!-- Product's Info -->
+          <fieldset class="form-group">
+            <legend>Product's Information</legend>
+
+            <!-- Price -->
+            <div class="form-group">
+              <p class="formLabel">Price: </p>
+              <p>CDN$
+                <span id="currentPrice">299</span> -
+                <span id="oldPrice">Was: CDN$ 399</span>
+              </p>
+            </div>
+
+            <!-- Quantity -->
+            <div class="form-group">
+              <label for="quantity">Quantity:</label>
+              <select class="form-control" id="quantity" aria-controls="total">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+
+            <!-- Shipping -->
+            <div class="form-group">
+              <p class="formLabel" id="labelshipping">Shipping Methods:</p>
+              <div role="radiogroup" aria-labelledby="labelshipping">
+                <input type="radio" id="canadapost" name="shipping" value="canadapost" role="radio" aria-checked="true" aria-labelledby="labelcanadapost"
+                  tabindex="0" checked>
+                <label for="canadapost" id="labelcanadapost">Canada Post - 5 business day</label>
+                <br>
+                <input type="radio" id="fedex" name="shipping" value="fedex" role="radio" aria-checked="false" aria-labelledby="labelfedex">
+                <label for="fedex" id="labelfedex">Fedex - 2 business day</label>
+                <br>
+                <input type="radio" id="dhl" name="shipping" value="dhl" role="radio" aria-checked="false" aria-labelledby="labeldhl" aria-disabled="true"
+                  disabled>
+                <label for="dhl" id="labeldhl">DHL</label>
+                <br>
+              </div>
+            </div>
+
+            <!-- Gift -->
+            <div class="form-group">
+              <p id="gift">Is it a gift?</p>
+              <label for="checkBox">Yes</label>
+              <input id="checkBox" type="checkbox" aria-checked="false">
+            </div>
+
+            <!-- Total -->
+            <div class="form-group" aria-live="assertive" id="totalField">
+              <p class="formLabel">Total: </p>
+              <p id="totalPrice">CDN$
+                <span id="total">299</span>
+              </p>
+            </div>
+          </fieldset>
+
+          <!-- Customer Info -->
+          <fieldset class="form-group">
+            <legend>Billing Information</legend>
+            <div class="form-field">
+              <label for="fname">First Name</label>
+              <input class="form-control" type="text" name="fname" id="fname" aria-describedby="firstname-tip" aria-required="true" required
+                size="50" maxlength="25" />
+              <div role="tooltip" id="firstname-tip">Type your first name</div>
+            </div>
+            <div class="form-field">
+              <label for="lname">Last Name</label>
+              <input class="form-control" type="text" name="lname" id="lname" aria-describedby="lasname-tip" aria-required="true" required
+                size="50" maxlength="25" />
+              <div role="tooltip" id="lasname-tip">Type your last name</div>
+            </div>
+            <div class="form-field">
+              <label for="address">Address</label>
+              <input class="form-control" type="text" name="address" id="address" aria-describedby="address-tip" aria-required="true" required
+                size="70" maxlength="100" />
+              <div role="tooltip" id="address-tip">Type your address</div>
+            </div>
+            <div class="form-field">
+              <label for="phone">Phone Number</label>
+              <input class="form-control" type="tel" name="phone" id="phone" size="30" maxlength="20" aria-describedby="phone-tip" aria-required="true"
+                required />
+              <div role="tooltip" id="phone-tip">Type your phone</div>
+            </div>
+            <div class="form-field">
+              <label for="email">E-mail</label>
+              <input class="form-control" type="email" name="email" id="email" size="50" maxlength="50" aria-describedby="email-tip" aria-required="true"
+                required />
+              <div role="tooltip" id="email-tip">Type your email address</div>
+            </div>
+            <button type="submit" class="btn">
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to Cart
+            </button>
+          </fieldset>
+          <!-- /.form-group customer info -->
+        </form>
+
+        <!-- Other Models -->
+        <aside role="complementary">
+          <h3>+ Other Models</h3>
+          <div class="model">
+            <img src="./images/blender1.jpg" alt="">
+            <h4>Blender Intelli-Sense™ Kitchen System</h4>
+            <p>Model #: ABC - Blender Intelli-Sense™ Kitchen System with Smart Vessel Recognition and 12 Smart Programs</p>
+            <a href="#" class="learnMore">Learn More</a>
+          </div>
+          <!-- /.model -->
+
+          <div class="model">
+            <img src="./images/blender2.jpg" alt="">
+            <h4>Chef™ High-Speed Blender</h4>
+            <p>Model #: DEF - The Chef™ Blender features a 1500-watt advanced motor system, next-generation high-speed blade
+              design, and blender's widest variable speed range, designed to power through tough ingredients and avoid bogging
+              down. </p>
+            <a href="#" class="learnMore">Learn More</a>
+          </div>
+          <!-- /.model -->
+
+          <div class="model">
+            <img src="./images/blender3.jpg" alt="">
+            <h4>Blender Intelli-Sense™ Kitchen System</h4>
+            <p>Model #: GHI - Blender Precision Processor™ with Auto-Spiralizer™ featuring two interchangeable vessels</p>
+            <a href="#" class="learnMore">Learn More</a>
+          </div>
+          <!-- /.model -->
+        </aside>
+
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>
+      <small>COMP1074 – Usability & Accessibility</small>
+    </p>
+    <p>
+      <small>Assignment 3</small>
+    </p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
